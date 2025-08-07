@@ -25,7 +25,22 @@
       gamescopeSession.enable = true;
     };
 
-    gamemode.enable = true;
+    gamemode = {
+      enable = true;
+
+      settings = {
+        general = {
+          softrealtime = "on";
+          inhibit_screensaver = 1;
+        };
+
+        gpu = {
+          apply_gpy_optimisations = "accept-responsibility";
+          gpu_device = 0;
+          amd_performance_level = "high";
+        };
+      };
+    };
   };
 
   environment = {

@@ -64,6 +64,8 @@
       "wheel"
       "audio"
       "video"
+      # Check networking.nix
+      "network"
     ];
     shell = pkgs.zsh;
     packages = [];
