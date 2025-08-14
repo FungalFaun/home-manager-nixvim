@@ -8,6 +8,7 @@ in {
   imports = [
     ./binds.nix
     ./hyprpaper.nix
+    ./hyprpanel.nix
     ./hypridle.nix
     ../clipboard.nix
   ];
