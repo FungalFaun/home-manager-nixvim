@@ -1,11 +1,14 @@
+# https://github.com/spector700/Akari/blob/main/config/keymaps.nix
 {
   inputs,
   pkgs,
   ...
 }: {
-  # Import all your configuration modules here
   imports = [
     inputs.nixvim.homeModules.nixvim
+    ./plugins/lang/json.nix
+    ./plugins/lang/typescript.nix
+
     ./plugins/autopairs.nix
     ./plugins/barbar.nix
     ./plugins/bufferline.nix
